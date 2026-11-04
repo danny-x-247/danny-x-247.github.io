@@ -202,6 +202,58 @@ header {
 }
 
 
+/* Skills Section */
+.skills {
+    padding: 100px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.skills h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.skills-intro {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 30px;
+    background: #f8faff;
+    border: 1px solid #e5eaf5;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.skill-card h3 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    padding: 10px 0;
+    color: #555;
+    border-bottom: 1px solid #e5eaf5;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 .about-card p {
     color: #666666;
     line-height: 1.8;
