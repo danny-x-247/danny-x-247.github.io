@@ -258,3 +258,75 @@ header {
     color: #666666;
     line-height: 1.8;
 }
+
+/* Projects Section */
+.projects {
+    padding: 100px 8%;
+    background: #f8faff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #e5eaf5;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.project-status {
+    display: inline-block;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
